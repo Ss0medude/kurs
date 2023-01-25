@@ -1,0 +1,50 @@
+\hypertarget{classerror__processing}{}\doxysection{Класс error\+\_\+processing}
+\label{classerror__processing}\index{error\_processing@{error\_processing}}
+
+
+Класс для обработки ошибок и записи в журнал  
+
+
+
+
+{\ttfamily \#include $<$error\+\_\+processing.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classerror__processing_a624b7d53223d88b8911cd2b525ef4c7e}\label{classerror__processing_a624b7d53223d88b8911cd2b525ef4c7e}} 
+string \mbox{\hyperlink{classerror__processing_a624b7d53223d88b8911cd2b525ef4c7e}{get\+\_\+log\+\_\+path}} (string log\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Конструктор без параметров \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classerror__processing_a07ae99988698820b121ca2c27b9d85d9}{write\+\_\+log}} (string why, bool exit)
+\begin{DoxyCompactList}\small\item\em Функция, выдающая путь к файлу с журналом ошибок \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки ошибок и записи в журнал 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classerror__processing_a07ae99988698820b121ca2c27b9d85d9}\label{classerror__processing_a07ae99988698820b121ca2c27b9d85d9}} 
+\index{error\_processing@{error\_processing}!write\_log@{write\_log}}
+\index{write\_log@{write\_log}!error\_processing@{error\_processing}}
+\doxysubsubsection{\texorpdfstring{write\_log()}{write\_log()}}
+{\footnotesize\ttfamily void error\+\_\+processing\+::write\+\_\+log (\begin{DoxyParamCaption}\item[{string}]{why,  }\item[{bool}]{exit }\end{DoxyParamCaption})}
+
+
+
+Функция, выдающая путь к файлу с журналом ошибок 
+
+Функция записи ошибки в журнал
+
+Функция записывает время, суть и критичность ошибки 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em why,суть} & ошибки, string \\
+\hline
+\mbox{\texttt{ in}}  & {\em exit,критичность} & ошибки (Критическая -\/ true, Некритическая -\/ false), string \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+error\+\_\+processing.\+h\item 
+error\+\_\+processing.\+cpp\end{DoxyCompactItemize}

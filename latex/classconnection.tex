@@ -1,0 +1,102 @@
+\hypertarget{classconnection}{}\doxysection{Класс connection}
+\label{classconnection}\index{connection@{connection}}
+
+
+Класс соединения с клиентом  
+
+
+
+
+{\ttfamily \#include $<$connection.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnection_a5a872769a5ff99376e1cf4fa19fdcc4b}{connection}} (int port)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classconnection_ad02dec7a987f1783b6a2be108a076427}\label{classconnection_ad02dec7a987f1783b6a2be108a076427}} 
+int \mbox{\hyperlink{classconnection_ad02dec7a987f1783b6a2be108a076427}{Bind}} ()
+\begin{DoxyCompactList}\small\item\em Привязка сокета к адресу \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classconnection_a4aaf1c56d22a10a18ec3475da3dbff8c}\label{classconnection_a4aaf1c56d22a10a18ec3475da3dbff8c}} 
+void \mbox{\hyperlink{classconnection_a4aaf1c56d22a10a18ec3475da3dbff8c}{Listen}} ()
+\begin{DoxyCompactList}\small\item\em Установка сокета в пассивный режим ожидания \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classconnection_a0b0480d6a68dec571b363e48278f327c}\label{classconnection_a0b0480d6a68dec571b363e48278f327c}} 
+int \mbox{\hyperlink{classconnection_a0b0480d6a68dec571b363e48278f327c}{Accept}} ()
+\begin{DoxyCompactList}\small\item\em Приём соединения \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classconnection_aa66113511092373daa7ea0ceca032218}{Recv}} (int s, void $\ast$buf, int size)
+\begin{DoxyCompactList}\small\item\em Приём данных от клиента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classconnection_a86a798f864cd4402efb01dac65bcbb47}{Send}} (int s, void $\ast$buf, int sizeb)
+\begin{DoxyCompactList}\small\item\em Отправка данных клиенту \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classconnection_a73ef360f42437e059cbc42a087ede27f}\label{classconnection_a73ef360f42437e059cbc42a087ede27f}} 
+void \mbox{\hyperlink{classconnection_a73ef360f42437e059cbc42a087ede27f}{Close}} ()
+\begin{DoxyCompactList}\small\item\em Закрытие сокета \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс соединения с клиентом 
+
+Для соединения использованы сокеты 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classconnection_a5a872769a5ff99376e1cf4fa19fdcc4b}\label{classconnection_a5a872769a5ff99376e1cf4fa19fdcc4b}} 
+\index{connection@{connection}!connection@{connection}}
+\index{connection@{connection}!connection@{connection}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+{\footnotesize\ttfamily connection\+::connection (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+Устанавливает порт, инициализирует основной сокет и структуру sockaddr\+\_\+in 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em port,порт,на} & котором работает сервер, int. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classconnection_aa66113511092373daa7ea0ceca032218}\label{classconnection_aa66113511092373daa7ea0ceca032218}} 
+\index{connection@{connection}!Recv@{Recv}}
+\index{Recv@{Recv}!connection@{connection}}
+\doxysubsubsection{\texorpdfstring{Recv()}{Recv()}}
+{\footnotesize\ttfamily int connection\+::\+Recv (\begin{DoxyParamCaption}\item[{int}]{s,  }\item[{void $\ast$}]{buf,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Приём данных от клиента 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em sock,сокет,int} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em buf,буфер} & для данных, void$\ast$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em size,размер} & буфера, int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classconnection_a86a798f864cd4402efb01dac65bcbb47}\label{classconnection_a86a798f864cd4402efb01dac65bcbb47}} 
+\index{connection@{connection}!Send@{Send}}
+\index{Send@{Send}!connection@{connection}}
+\doxysubsubsection{\texorpdfstring{Send()}{Send()}}
+{\footnotesize\ttfamily void connection\+::\+Send (\begin{DoxyParamCaption}\item[{int}]{s,  }\item[{void $\ast$}]{buf,  }\item[{int}]{sizeb }\end{DoxyParamCaption})}
+
+
+
+Отправка данных клиенту 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em sock,сокет,int} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em buf,буфер} & с данными, void$\ast$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em sizeb,количество} & отправляемых байт, int \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+connection.\+h\item 
+connection.\+cpp\end{DoxyCompactItemize}

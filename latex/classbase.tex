@@ -1,0 +1,69 @@
+\hypertarget{classbase}{}\doxysection{Класс base}
+\label{classbase}\index{base@{base}}
+
+
+Класс для работы с базой данных  
+
+
+
+
+{\ttfamily \#include $<$read\+\_\+base.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase_a77e64f434b83e9af3c883819073bf6b3}{base}} (string base\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Конструктор, считывающий базу данных и сохраняющий её в словарь \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbase_a40811d89589accab1c86db38e47a183b}{check\+\_\+user}} (string user)
+\begin{DoxyCompactList}\small\item\em Проверка наличия идентификатора клиента в базе данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbase_a369cde9169c1f34e320bc10756bdab86}\label{classbase_a369cde9169c1f34e320bc10756bdab86}} 
+map$<$ string, string $>$ \mbox{\hyperlink{classbase_a369cde9169c1f34e320bc10756bdab86}{Data\+Base}}
+\begin{DoxyCompactList}\small\item\em Словарь с парами идентификатор\+:пароль \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для работы с базой данных 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classbase_a77e64f434b83e9af3c883819073bf6b3}\label{classbase_a77e64f434b83e9af3c883819073bf6b3}} 
+\index{base@{base}!base@{base}}
+\index{base@{base}!base@{base}}
+\doxysubsubsection{\texorpdfstring{base()}{base()}}
+{\footnotesize\ttfamily base\+::base (\begin{DoxyParamCaption}\item[{string}]{base\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Конструктор, считывающий базу данных и сохраняющий её в словарь 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em base\+\_\+name,путь} & к файлу с базой данных, string. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classbase_a40811d89589accab1c86db38e47a183b}\label{classbase_a40811d89589accab1c86db38e47a183b}} 
+\index{base@{base}!check\_user@{check\_user}}
+\index{check\_user@{check\_user}!base@{base}}
+\doxysubsubsection{\texorpdfstring{check\_user()}{check\_user()}}
+{\footnotesize\ttfamily bool base\+::check\+\_\+user (\begin{DoxyParamCaption}\item[{string}]{user }\end{DoxyParamCaption})}
+
+
+
+Проверка наличия идентификатора клиента в базе данных 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em user,идентификатора} & клиента, string \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+read\+\_\+base.\+h\item 
+read\+\_\+base.\+cpp\end{DoxyCompactItemize}

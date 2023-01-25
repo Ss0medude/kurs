@@ -1,0 +1,107 @@
+\hypertarget{classauthorization}{}\doxysection{Класс authorization}
+\label{classauthorization}\index{authorization@{authorization}}
+
+
+Класс для аутентификации клиента на сервере  
+
+
+
+
+{\ttfamily \#include $<$authorization.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classauthorization_abf0eace935c4224c22a43794ee985be5}{authorization}} (string Id, string Password)
+\begin{DoxyCompactList}\small\item\em Конструктор для установки идентификатора и пароля клиента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classauthorization_af4ee755fe58b5e7d56bdf83b57a9a562}{generate\+\_\+salt}} ()
+\begin{DoxyCompactList}\small\item\em Генерация случайной соли для вычисления хэша \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classauthorization_a8c51c0fe450feb5b4926551bf424435a}{compare\+\_\+hash}} (string client\+\_\+hash)
+\begin{DoxyCompactList}\small\item\em Сравнение хэша, присылаемого клиентом и хэша, вычисляемого внутри метода \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classauthorization_aec670332b57fcec2ac5ead5b3d385363}\label{classauthorization_aec670332b57fcec2ac5ead5b3d385363}} 
+string {\bfseries get\+\_\+salt} ()
+\item 
+\mbox{\Hypertarget{classauthorization_adc7d1548efc45bb9c66c535f12c4ac81}\label{classauthorization_adc7d1548efc45bb9c66c535f12c4ac81}} 
+std\+::string {\bfseries get\+\_\+id} ()
+\item 
+\mbox{\Hypertarget{classauthorization_abd9f575d0c6fb4e08fa1d8c64abf8993}\label{classauthorization_abd9f575d0c6fb4e08fa1d8c64abf8993}} 
+std\+::string {\bfseries get\+\_\+password} ()
+\item 
+\mbox{\Hypertarget{classauthorization_aa01c643cbb2a7c65f18c30bf81ba6197}\label{classauthorization_aa01c643cbb2a7c65f18c30bf81ba6197}} 
+std\+::string {\bfseries get\+\_\+hash} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classauthorization_a2dc5978e436c27f6cb69cc2919d7797d}\label{classauthorization_a2dc5978e436c27f6cb69cc2919d7797d}} 
+char \mbox{\hyperlink{classauthorization_a2dc5978e436c27f6cb69cc2919d7797d}{err}} \mbox{[}3\mbox{]} = \{\textquotesingle{}E\textquotesingle{},\textquotesingle{}R\textquotesingle{},\textquotesingle{}R\textquotesingle{}\}
+\begin{DoxyCompactList}\small\item\em Сообщение, отсылаемое клиенту при ошибке его обрабоки \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classauthorization_a89f034fc78decf13103efdf785680dc0}\label{classauthorization_a89f034fc78decf13103efdf785680dc0}} 
+char \mbox{\hyperlink{classauthorization_a89f034fc78decf13103efdf785680dc0}{ok}} \mbox{[}2\mbox{]} = \{\textquotesingle{}O\textquotesingle{},\textquotesingle{}K\textquotesingle{}\}
+\begin{DoxyCompactList}\small\item\em Сообщение, отсылаемое клиенту при успешной авторизации \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для аутентификации клиента на сервере 
+
+Функция вычисления хэша MD5 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classauthorization_abf0eace935c4224c22a43794ee985be5}\label{classauthorization_abf0eace935c4224c22a43794ee985be5}} 
+\index{authorization@{authorization}!authorization@{authorization}}
+\index{authorization@{authorization}!authorization@{authorization}}
+\doxysubsubsection{\texorpdfstring{authorization()}{authorization()}}
+{\footnotesize\ttfamily authorization\+::authorization (\begin{DoxyParamCaption}\item[{string}]{Id,  }\item[{string}]{Password }\end{DoxyParamCaption})}
+
+
+
+Конструктор для установки идентификатора и пароля клиента 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em Id,идентификатор} & клиента, string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Password,пароль} & клиента, string. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classauthorization_a8c51c0fe450feb5b4926551bf424435a}\label{classauthorization_a8c51c0fe450feb5b4926551bf424435a}} 
+\index{authorization@{authorization}!compare\_hash@{compare\_hash}}
+\index{compare\_hash@{compare\_hash}!authorization@{authorization}}
+\doxysubsubsection{\texorpdfstring{compare\_hash()}{compare\_hash()}}
+{\footnotesize\ttfamily bool authorization\+::compare\+\_\+hash (\begin{DoxyParamCaption}\item[{string}]{client\+\_\+hash }\end{DoxyParamCaption})}
+
+
+
+Сравнение хэша, присылаемого клиентом и хэша, вычисляемого внутри метода 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em client\+\_\+hash,хэш} & клиента, tring \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classauthorization_af4ee755fe58b5e7d56bdf83b57a9a562}\label{classauthorization_af4ee755fe58b5e7d56bdf83b57a9a562}} 
+\index{authorization@{authorization}!generate\_salt@{generate\_salt}}
+\index{generate\_salt@{generate\_salt}!authorization@{authorization}}
+\doxysubsubsection{\texorpdfstring{generate\_salt()}{generate\_salt()}}
+{\footnotesize\ttfamily void authorization\+::generate\+\_\+salt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Генерация случайной соли для вычисления хэша 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em salt,соль,string.} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em size,размер} & соли, size\+\_\+t. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+authorization.\+h\item 
+authorization.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{classserver}{}\doxysection{Класс server}
+\label{classserver}\index{server@{server}}
+
+
+Класс для получения параметров коммандной строки  
+
+
+
+
+{\ttfamily \#include $<$server.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classserver_a63b221ca17916057e940eb7d2699bc0c}{server}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Конструктор, внутри которого считываются параметры командной строки \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classserver_a4e9bba51218bdd13a98858177eda9273}\label{classserver_a4e9bba51218bdd13a98858177eda9273}} 
+string {\bfseries get\+\_\+base} ()
+\item 
+\mbox{\Hypertarget{classserver_ad3c890070597b8846a8415f04884528c}\label{classserver_ad3c890070597b8846a8415f04884528c}} 
+string {\bfseries get\+\_\+log} ()
+\item 
+\mbox{\Hypertarget{classserver_af787911495991e5304304996fe4b8ded}\label{classserver_af787911495991e5304304996fe4b8ded}} 
+int {\bfseries get\+\_\+port} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для получения параметров коммандной строки 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classserver_a63b221ca17916057e940eb7d2699bc0c}\label{classserver_a63b221ca17916057e940eb7d2699bc0c}} 
+\index{server@{server}!server@{server}}
+\index{server@{server}!server@{server}}
+\doxysubsubsection{\texorpdfstring{server()}{server()}}
+{\footnotesize\ttfamily server\+::server (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Конструктор, внутри которого считываются параметры командной строки 
+
+Параметры командной строки\+: 1)-\/b Путь к файлу с базой данных, необязательный 2)-\/l Путь к файлу для записи логов, необязательный 3)-\/p Порт, на котором работает сервер, необязательный 4)-\/h вызов подсказки 5) ? вызов подсказки При ошибках в параметрах или запуске без них вызывается справка и программа завершает работу 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em int} & argc \\
+\hline
+\mbox{\texttt{ in}}  & {\em char} & $\ast$$\ast$argv \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+server.\+h\item 
+server.\+cpp\end{DoxyCompactItemize}

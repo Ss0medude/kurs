@@ -1,0 +1,96 @@
+\hypertarget{classname__error}{}\doxysection{Класс name\+\_\+error}
+\label{classname__error}\index{name\_error@{name\_error}}
+
+
+Класс для обработки ошибок  
+
+
+
+
+{\ttfamily \#include $<$error\+\_\+processing.\+h$>$}
+
+
+
+Граф наследования\+:name\+\_\+error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classname__error__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса name\+\_\+error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classname__error__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classname__error_aa7a003ddf9725f52ea1866b29e1b2d2d}{name\+\_\+error}} (const string \&whyy, bool exitt=false)
+\begin{DoxyCompactList}\small\item\em Конструктор ошибок с строкой в качестве параметра \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classname__error_a409ae067fdb566e44508e10a77a5417c}{name\+\_\+error}} (const char $\ast$whyy, bool exitt=false)
+\begin{DoxyCompactList}\small\item\em Конструктор ошибок с си-\/строкой в качестве параметра \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classname__error_a5fcce3f400e9301bac6adade23799d12}{get\+\_\+status}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки ошибок 
+
+Наследует от класса invalid\+\_\+argument 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classname__error_aa7a003ddf9725f52ea1866b29e1b2d2d}\label{classname__error_aa7a003ddf9725f52ea1866b29e1b2d2d}} 
+\index{name\_error@{name\_error}!name\_error@{name\_error}}
+\index{name\_error@{name\_error}!name\_error@{name\_error}}
+\doxysubsubsection{\texorpdfstring{name\_error()}{name\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily name\+\_\+error\+::name\+\_\+error (\begin{DoxyParamCaption}\item[{const string \&}]{whyy,  }\item[{bool}]{exitt = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Конструктор ошибок с строкой в качестве параметра 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em whyy,тип} & ошибки, const string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em exitt,критическа} & ошибка -\/ true, некритическая ошибка -\/ false, bool \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classname__error_a409ae067fdb566e44508e10a77a5417c}\label{classname__error_a409ae067fdb566e44508e10a77a5417c}} 
+\index{name\_error@{name\_error}!name\_error@{name\_error}}
+\index{name\_error@{name\_error}!name\_error@{name\_error}}
+\doxysubsubsection{\texorpdfstring{name\_error()}{name\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily name\+\_\+error\+::name\+\_\+error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{whyy,  }\item[{bool}]{exitt = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Конструктор ошибок с си-\/строкой в качестве параметра 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em whyy,тип} & ошибки, const char$\ast$. \\
+\hline
+\mbox{\texttt{ in}}  & {\em exitt,критическа} & ошибка -\/ true, штатная -\/ false, bool \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classname__error_a5fcce3f400e9301bac6adade23799d12}\label{classname__error_a5fcce3f400e9301bac6adade23799d12}} 
+\index{name\_error@{name\_error}!get\_status@{get\_status}}
+\index{get\_status@{get\_status}!name\_error@{name\_error}}
+\doxysubsubsection{\texorpdfstring{get\_status()}{get\_status()}}
+{\footnotesize\ttfamily bool name\+\_\+error\+::get\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+$<$Возвращает статус критичности ошибки
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+error\+\_\+processing.\+h\end{DoxyCompactItemize}
